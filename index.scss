@@ -122,6 +122,11 @@ $secondColor: white;
                 align-items: center;
                 justify-content: space-between;
                 padding: 0 23% 0 23%;
+
+                .contactus {
+                        text-decoration: none;
+                        color: $secondColor;
+                    }
             }
 
             .social-networks {

@@ -101,6 +101,10 @@
   justify-content: space-between;
   padding: 0 23% 0 23%;
 }
+#main-container footer .first-line .contactus {
+  text-decoration: none;
+  color: white;
+}
 #main-container footer .social-networks {
   height: 40px;
   display: flex;
