@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav .navigation {
+  height: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+nav .navigation li {
+  padding: 10px;
+  list-style: none;
+  border-radius: 3px;
+  color: rgb(1, 1, 1);
+  transition: all 0.7s ease-in-out;
+}
+nav .navigation li:hover {
+  background-color: rgba(0, 0, 0, 0.782);
+  color: white;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.main-icon { /*Placed big icon in the centre to make all future recipis pages in the same style*/
+  display: flex;
+  justify-content: center;
+}
+.main-icon span {
+  width: 90px;
+  padding: 10px 0 10px 0;
+}
+
+.main-container {
+  /*styling of information part*/
+  /*styling of the main grid*/
+  /*atyling of footer*/
+}
+.main-container h1 {
+  width: 100%;
+  text-align: center;
+}
+.main-container .description {
+  width: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.main-container .main-info .time {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.main-container .main-info .time ul li {
+  list-style-type: none;
+}
+.main-container .main-info .details {
+  width: 80%;
+  margin: auto;
+}
+.main-container .main-info .details p {
+  padding: 30px 0 30px 0;
+}
+.main-container .step-by-step-photo {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(2, 350px);
+  gap: 30px;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 30px 0 30px 0;
+}
+.main-container .step-by-step-photo img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
+  text-align: justify;
+}
+.main-container .step-by-step-photo .step1, .main-container .step-by-step-photo .step2, .main-container .step-by-step-photo .step3, .main-container .step-by-step-photo .step4, .main-container .step-by-step-photo .step5, .main-container .step-by-step-photo .step6, .main-container .step-by-step-photo .step7, .main-container .step-by-step-photo .step8, .main-container .step-by-step-photo .step9 {
+  border: 2px solid black;
+  border-radius: 4px;
+  text-align: center;
+  padding: 7px;
+}
+.main-container footer {
+  background-color: rgb(1, 8, 8);
+  color: white;
+  width: 100%;
+}
+.main-container footer .logo {
+  width: 30px;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.main-container footer .recipe-of-day {
+  text-decoration: none;
+  color: white;
+}
+.main-container footer .first-line {
+  height: 40px;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 23% 0 23%;
+}
+.main-container footer .social-networks {
+  height: 40px;
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.main-container footer .copyrights {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+}
+@media screen and (max-width: 700px) {
+  .main-container .step-by-step-photo {
+    grid-template-columns: repeat(1, 400px);
+  }
+}/*# sourceMappingURL=recipe.css.map */

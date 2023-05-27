@@ -1,0 +1,152 @@
+$mainColor: black;
+$secondColor: white;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main-container {
+
+//styling of navigation menu
+
+    nav{
+        display: flex;
+        width: 100%;
+
+            .logo-icon{
+                width: 40px;
+                padding: 10px;
+            }
+    
+        .navigation {
+            width: 100%;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 30px;
+            font-weight: bold;
+          
+            
+            .search {
+                width: 20px;
+            }
+
+            .recipe-of-month {
+                text-decoration: none;
+                color: $mainColor
+            }
+        }
+    }
+
+    /* second part of the nav bar, where menu is*/
+
+    .menu {
+            width: 100%;
+            height: 30px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            list-style-type: none;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            font-weight: bold;
+
+                 }
+
+    //styling of main grid
+
+    .menu-container{
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(3, 350px);
+        gap: 40px;
+       justify-content: center;
+       padding: 30px;
+    
+         img {
+             width: 100%;
+             height: 100%;
+             object-fit: cover;
+             border-radius: 5px;
+            box-shadow: -2px -2px 5px 2px gray;
+              }
+
+        .photo1, .photo2, .photo3, 
+        .photo4, .photo5, .photo6, 
+        .photo7, .photo8, .photo9 
+        
+            {position: relative;
+            
+                .text {
+                        position: absolute;
+                        color: $secondColor;
+                        width: 100%;
+                        height: 20%;
+                        background-color: rgba(0, 0, 0, 0.463);
+                        bottom:0px;
+                        text-align: center;
+                        }
+
+                        p {
+                         margin-top: 20px;
+                        }
+            }         
+                }
+
+
+        // styling of footer
+
+        footer {
+            background-color: rgb(1, 8, 8);
+            color: white;
+            width: 100%;
+
+            .logo {
+                width: 30px;
+                background-color: $secondColor;  /* instead of white icons i used black one with white background color*/
+                border-radius: 5px; 
+                cursor: pointer;
+            }
+
+            .recipe-of-day {
+                text-decoration: none;
+                color: white;
+            }
+
+            .first-line {
+                height: 40px;
+                display: flex;
+                list-style-type: none;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 23% 0 23%;
+            }
+
+            .social-networks {
+
+                height: 40px;
+                display: flex;
+                list-style-type: none;
+                gap: 40px;
+                align-items: center;
+                justify-content: center;
+                padding-top: 20px;
+            }
+            .copyrights{
+            
+            display: flex;
+            justify-content: center;
+            padding: 20px 0 10px 0;
+            }
+        }
+
+                @media screen and (max-width: 700px) {
+                    .menu-container {
+                        grid-template-columns: repeat(1, 400px);
+                    }
+        
+                }
+}
+

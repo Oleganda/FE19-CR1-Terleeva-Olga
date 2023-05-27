@@ -1,0 +1,175 @@
+$mainColor: black;
+$secondColor: white;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    .navigation {
+        height: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        
+        li {
+            padding: 10px;
+            list-style: none;
+            border-radius: 3px;
+            color: rgb(1, 1, 1);
+            transition: all 0.7s ease-in-out;
+
+
+            &:hover {
+                    background-color: rgba(0, 0, 0, 0.782);
+                    color: white;
+                    cursor: pointer;
+                    border-radius: 3px;
+                }
+
+        }
+
+    }
+}
+
+.main-icon {           /*Placed big icon in the centre to make all future recipis pages in the same style*/
+    display: flex;
+    justify-content: center;
+        span {
+        width: 90px;
+        padding: 10px 0 10px 0;
+    }
+}
+
+.main-container {
+    h1 {
+        width: 100%;
+       text-align: center;
+    }
+
+    .description {
+     width: 100%;
+      padding-bottom: 30px;
+      text-align: center;
+    }
+
+/*styling of information part*/
+
+.main-info{
+   
+    .time {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;    
+        ul {
+        li {
+            list-style-type: none; 
+            }
+            }
+            }
+
+    .details { 
+        width: 80%;
+        margin: auto;
+        
+        p {
+        padding: 30px 0 30px 0;
+        }
+    }
+}
+
+
+/*styling of the main grid*/
+
+.step-by-step-photo {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 350px);
+    gap: 30px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px 0 30px 0;
+
+    img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 4px;
+            text-align:justify;
+          
+        }
+
+        .step1, .step2, .step3, .step4,.step5,.step6,.step7,.step8,.step9 {
+            border: 2px solid $mainColor;
+            border-radius: 4px;
+            text-align: center;
+            padding: 7px;
+            
+        }
+   
+}
+
+/*atyling of footer*/
+
+ footer {
+     background-color: rgb(1, 8, 8);
+     color: white;
+     width: 100%;
+
+     .logo {
+         width: 30px;
+         background-color: $secondColor;
+         border-radius: 5px;
+         cursor: pointer;
+     }
+
+     .recipe-of-day {
+         text-decoration: none;
+         color: white;
+     }
+
+     .first-line {
+         height: 40px;
+         display: flex;
+         list-style-type: none;
+         align-items: center;
+         justify-content: space-between;
+         padding: 0 23% 0 23%;
+     }
+
+     .social-networks {
+
+         height: 40px;
+         display: flex;
+         list-style-type: none;
+         gap: 40px;
+         align-items: center;
+         justify-content: center;
+         padding-top: 20px;
+     }
+
+     .copyrights {
+
+         display: flex;
+         justify-content: center;
+         padding: 20px 0 10px 0;
+     }
+ }
+
+ @media screen and (max-width: 700px) {
+    .step-by-step-photo {
+         grid-template-columns: repeat(1, 400px);
+     }
+
+ }
+
+}
+
+

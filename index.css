@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main-container {
+  /* second part of the nav bar, where menu is*/
+}
+#main-container nav {
+  display: flex;
+  width: 100%;
+}
+#main-container nav .logo-icon {
+  width: 40px;
+  padding: 10px;
+}
+#main-container nav .navigation {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 30px;
+  font-weight: bold;
+}
+#main-container nav .navigation .search {
+  width: 20px;
+}
+#main-container nav .navigation .recipe-of-month {
+  text-decoration: none;
+  color: black;
+}
+#main-container .menu {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+#main-container .menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(3, 350px);
+  gap: 40px;
+  justify-content: center;
+  padding: 30px;
+}
+#main-container .menu-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  box-shadow: -2px -2px 5px 2px gray;
+}
+#main-container .menu-container .photo1, #main-container .menu-container .photo2, #main-container .menu-container .photo3,
+#main-container .menu-container .photo4, #main-container .menu-container .photo5, #main-container .menu-container .photo6,
+#main-container .menu-container .photo7, #main-container .menu-container .photo8, #main-container .menu-container .photo9 {
+  position: relative;
+}
+#main-container .menu-container .photo1 .text, #main-container .menu-container .photo2 .text, #main-container .menu-container .photo3 .text,
+#main-container .menu-container .photo4 .text, #main-container .menu-container .photo5 .text, #main-container .menu-container .photo6 .text,
+#main-container .menu-container .photo7 .text, #main-container .menu-container .photo8 .text, #main-container .menu-container .photo9 .text {
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 20%;
+  background-color: rgba(0, 0, 0, 0.463);
+  bottom: 0px;
+  text-align: center;
+}
+#main-container .menu-container .photo1 p, #main-container .menu-container .photo2 p, #main-container .menu-container .photo3 p,
+#main-container .menu-container .photo4 p, #main-container .menu-container .photo5 p, #main-container .menu-container .photo6 p,
+#main-container .menu-container .photo7 p, #main-container .menu-container .photo8 p, #main-container .menu-container .photo9 p {
+  margin-top: 20px;
+}
+#main-container footer {
+  background-color: rgb(1, 8, 8);
+  color: white;
+  width: 100%;
+}
+#main-container footer .logo {
+  width: 30px;
+  background-color: white; /* instead of white icons i used black one with white background color*/
+  border-radius: 5px;
+  cursor: pointer;
+}
+#main-container footer .recipe-of-day {
+  text-decoration: none;
+  color: white;
+}
+#main-container footer .first-line {
+  height: 40px;
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 23% 0 23%;
+}
+#main-container footer .social-networks {
+  height: 40px;
+  display: flex;
+  list-style-type: none;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+#main-container footer .copyrights {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 10px 0;
+}
+@media screen and (max-width: 700px) {
+  #main-container .menu-container {
+    grid-template-columns: repeat(1, 400px);
+  }
+}/*# sourceMappingURL=index.css.map */
